@@ -11,7 +11,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Основной блок
 if __name__ == '__main__':
-    app = ApplicationBuilder().token("ТВОЙ_ТОКЕН_ОТСЮДА").build()
+    app = ApplicationBuilder().token("7554030982:AAEtmxssa5thfvKPMR-7y3agTwAwYHCarSg").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
