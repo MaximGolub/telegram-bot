@@ -1,6 +1,6 @@
 services:
  - type: web
-   name: telegram-bot
+   name: telegram-keyboard-bot
    env: python
    plan: free
    buildCommand: ""
