@@ -49,7 +49,7 @@ telegram_app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_
 @app.route(f"/{TOKEN}", methods=["POST"])
 async def webhook():
     data = request.get_json(force=True)
-    update = Update.de_json(data)
+    update = Update.de_json(data, telegram_app.bot)
     await telegram_app.process_update(update)
     return "ok"
 
