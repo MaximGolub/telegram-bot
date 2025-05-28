@@ -6,5 +6,5 @@ services:
    buildCommand: ""
    startCommand: "python bot.py"
    envVars:
-    - key: 7554030982:AAEtmxssa5thfvKPMR-7y3agTwAwYHCarSg
+    - key: BOT_TOKEN
       sync: false
